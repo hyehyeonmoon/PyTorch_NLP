@@ -18,3 +18,11 @@ cut -f2 ./review.sorted.uniq.refined.tsv | mecab -O wakati | head -n 2
 ```
 
 (Mecab은 window에서 사전설치가 까다로운데, 강의는 설치방법을 알려주지 않으므로 실제 설치를 해도 잘 돌아가지 않는 경우가 있다. Python에서는 잘 돌아갔지만 cmd 창에서는 돌아가지 않아서 역시 실습을 진행하지 못하게 되었다.)
+
+### File
+|File| Description|
+|:-- |:-- |
+|install_mecab_linux.sh|Mecab을 리눅스에서 설치하는 command|
+|install_mecab_mac.sh|Mecab을 Mac에서 설치하는 command |
+|tokenize.sh|review.sorted.uniq.refined.tsv 파일에서 리뷰를 Mecab 분석기를 통해 tokenization 실시|
+|review.sorted.uniq.refined.tsv| 05-regex를 거친 정제된 홈쇼핑리뷰데이터|
