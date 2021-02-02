@@ -1,8 +1,3 @@
-# Ch03_Preprocessing
-
-Date: 2021년 2월 2일
-Description: regex, tokenization, subword_segmentation, detokenization, torchtext 실습
-
 ## [Summary]
 
 - Corpus 수집 및 정제하는 전체적인 과정에 대해 배웁니다.
@@ -16,7 +11,7 @@ Description: regex, tokenization, subword_segmentation, detokenization, torchtex
 
 ### NLP Project Workflow
 
-![Ch03_Preprocessing%2000d7372a8a2246949b65b47e5b3944a7/Untitled.png](Ch03_Preprocessing%2000d7372a8a2246949b65b47e5b3944a7/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/55529617/106600548-ef0fe800-659d-11eb-9117-ce5275b27058.png)
 
 ### Preprocessing Workflow
 
@@ -30,11 +25,11 @@ Interactive 노이즈 제거
 
 →코퍼스의 특성에 따른 노이즈 제거, 일일이 작업하는 것
 
-![Ch03_Preprocessing%2000d7372a8a2246949b65b47e5b3944a7/Untitled%201.png](Ch03_Preprocessing%2000d7372a8a2246949b65b47e5b3944a7/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/55529617/106600544-ed462480-659d-11eb-9d5b-19e789b41e1e.png)
 
 ### Data crawling
 
-![Ch03_Preprocessing%2000d7372a8a2246949b65b47e5b3944a7/Untitled%202.png](Ch03_Preprocessing%2000d7372a8a2246949b65b47e5b3944a7/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/55529617/106600545-ee775180-659d-11eb-94a1-aa26c5880018.png)
 
 ### Tokenization
 
