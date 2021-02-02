@@ -7,6 +7,14 @@
 
 ## [File]
 
+|Folder| Description|
+|:-- |:-- |
+|05-regex |정규표현식을 이용한 data cleaning 실습|
+|08-tokenization |Mecab을 이용한 tokenization 실습 |
+|11-subword_sementation | |
+|13-detokenization| |
+|18-torchtext| |
+
 ## [새롭게 알게 된 내용들]
 
 ### NLP Project Workflow
