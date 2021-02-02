@@ -15,3 +15,11 @@ python refine.py refine.regex.txt 1 <review.sorted.uniq.tsv> review.sorted.uniq.
 ```
 
 (하지만 강의에서는 Mac 기반이었으며 Window10의 cmd 창에서 실행해 본 결과 unicode error가 떴으며, open(—, encoding="UTF-8")으로 refine 파일 코드를 수정했으나 index out error가 떠서 실습을 진행하지 못하게 되었다.)
+
+### File
+|File| Description|
+|:-- |:-- |
+|refine |refine.regex, review.sorted.uniq.tsvf를 받아 전각 문자를 모두 반각 문자로 반환|
+|refine.regex |전각 문자, 반각 문자 들어가 있음|
+|review.sorted.uniq.tsv |label과 함께 들어있는 홈쇼핑리뷰 raw data |
+|review.sorted.uniq.refined.tsv |정규식 data cleaning을 거친 결과 |
