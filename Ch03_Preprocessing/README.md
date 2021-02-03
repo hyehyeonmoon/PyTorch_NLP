@@ -62,3 +62,7 @@ Interactive 노이즈 제거
 ![Untitled](https://user-images.githubusercontent.com/55529617/106778609-80a85400-6689-11eb-874c-5cf85b66e8f3.png)
 
 ![Untitled (1)](https://user-images.githubusercontent.com/55529617/106778619-82721780-6689-11eb-9d88-95d9b9f7c182.png)
+
+## Reference
+
+[김기현의 딥러닝을 활용한 자연어처리 입문 올인원 패키지 Online. | 패스트캠퍼스](https://www.fastcampus.co.kr/data_online_dpnlp)
