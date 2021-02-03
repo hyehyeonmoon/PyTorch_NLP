@@ -4,6 +4,9 @@
 - 정규식 표현을 배우고 실제로 이를 이용해 홈쇼핑(인터넷쇼핑) 리뷰를 전처리 해봅니다.
 - Corpus labeling의 종류에 대해 배워봅니다.
 - Tokenization의 필요성과 관련 tool들을 소개합니다.
+- subword segmentation과 detokenization을 알아봅니다.
+- 병렬 코퍼스를 정렬 하는 방법에 대해 배웁니다.
+- torchtext를 이용해 정제한 text data를 mini-batch train, valid, test set으로 만듭니다.
 
 ## [File]
 
@@ -11,9 +14,9 @@
 |:-- |:-- |
 |05-regex |정규표현식을 이용한 data cleaning 실습|
 |08-tokenization |Mecab을 이용한 tokenization 실습 |
-|11-subword_sementation | |
-|13-detokenization| |
-|18-torchtext| |
+|11-subword_sementation |tokenization 된 text를 더 세분화하게 나눔 |
+|13-detokenization|subword segmentation을 한 data를 다시 원상복귀하는 실습 |
+|18-torchtext|정제한 text data를 mini-batch train, valid, test set으로 만드는 실습 |
 
 ## [새롭게 알게 된 내용들]
 
@@ -46,4 +49,16 @@ Interactive 노이즈 제거
 
 (접어, 합성어, 교착어 나누기, 통일된 띄어쓰기를 위하여 시행)
 
+### Procedure to Build Parallel Corpus
 
+1. Bi-lingual Corpus 정제(노이즈 제거)
+2. Tokenization 수행(No subword segmentation)
+3. 각 언어별 코퍼스에 대해서 word embedding 수행(FastText 활용)
+4. MUSE를 활용하여 word translation dictionary 추출
+5. Champollion을 활용하여 align 수행
+
+### 미니배치의 형태
+
+![Untitled](https://user-images.githubusercontent.com/55529617/106778609-80a85400-6689-11eb-874c-5cf85b66e8f3.png)
+
+![Untitled (1)](https://user-images.githubusercontent.com/55529617/106778619-82721780-6689-11eb-9d88-95d9b9f7c182.png)
