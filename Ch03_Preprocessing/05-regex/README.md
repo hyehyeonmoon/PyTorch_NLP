@@ -23,4 +23,5 @@ python refine.py refine.regex.txt 1 <review.sorted.uniq.tsv> review.sorted.uniq.
 |refine.regex |전각 문자, 반각 문자 들어가 있음|
 |review.sorted.uniq.tsv |label과 함께 들어있는 홈쇼핑리뷰 raw data |
 |review.sorted.uniq.refined.tsv |정규식 data cleaning을 거친 결과 |
+
 (여기에 없는 파일은 https://www.notion.so/05-regex-1cfea82e2a7b482ba3cdd482a2677cf4 에 저장되어 있습니다.)
