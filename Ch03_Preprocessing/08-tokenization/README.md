@@ -26,3 +26,5 @@ cut -f2 ./review.sorted.uniq.refined.tsv | mecab -O wakati | head -n 2
 |install_mecab_mac.sh|Mecab을 Mac에서 설치하는 command |
 |tokenize.sh|review.sorted.uniq.refined.tsv 파일에서 리뷰를 Mecab 분석기를 통해 tokenization 실시|
 |review.sorted.uniq.refined.tsv| 05-regex를 거친 정제된 홈쇼핑리뷰데이터|
+
+(여기에 없는 파일은 https://www.notion.so/08-tokenization-dea30a606f50486f8b029a5938070e34 에 저장되어 있습니다.)
