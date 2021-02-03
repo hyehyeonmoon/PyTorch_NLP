@@ -41,4 +41,5 @@ paste ./review.sorted.uniq.refined.tsv.label ./review.sorted.uniq.refined.tsv.te
 |tokenize.sh|label과 subword segmentation이 수행된 text 파일을 합치는 코드 |
 |review.sorted.uniq.refined.tsv| 홈쇼핑 리뷰 raw data|
 
+(여기에 없는 파일은 https://www.notion.so/11-subword_segmentation-33460324e29648d4a91a30c099cbe746 에 있습니다.)
 
