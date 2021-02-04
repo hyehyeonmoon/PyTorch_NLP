@@ -10,6 +10,7 @@
 ## [파일]
 
 |File|Description|Folder|
+|:-- |:--|:-- |
 |wordnet |wordnet 실습 |04-wordnet|
 |word_similarity |L1, L2, Inf norm, Cosine similarity를 이용해 단어 유사도 구하기 실습 |07-previous_methods |
 |fasttext |FastText를 불러와 단어임베딩 실습(Python code) |13-word_embedding |
