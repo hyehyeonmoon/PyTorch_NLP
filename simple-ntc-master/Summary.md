@@ -3,7 +3,7 @@
 - dataset과 dataloader를 통해 이전 data_loader 파일에서 구현했던 데이터 split, 전처리, shuffle+mini batch 구현을 더 간단히 해볼 수 있었다.
 - PyTorch Ignite을 통해 짧고 간단하면서도 여러 모델 또는 상황에 적용 가능한 Boilerplate을 만들 수 있었다.
 
-## **[File]**
+## [File]
 
 |File|Description|
 |:-- |:-- |
@@ -13,11 +13,11 @@
 | train| argparser, main 함수로 신경망의 학습을 시작|
 | trainer| PyTorch Ignite으로 구현되어 process function과 동작순서가 저장|
 | utils| parameter, gradienr의 L2 norm을 구하는 함수|
-
+실습에 사용된 데이터는 [개인노션](https://www.notion.so/Ch05_Text-classification-07754eb0b79c4db1b5977990c52ef22b)에서 찾을 수 있습니다.(비공개)
 
 ## [새롭게 알게 된 내용들]
 
-학습
+[Training]
 
 ```
 #directory 설정
@@ -41,3 +41,7 @@ echo "배송이 늦게 왔지만 제품 자체는 정말 좋네요." | mecab -o 
 ![Untitled (4)](https://user-images.githubusercontent.com/55529617/108087988-4f814800-70bb-11eb-941a-33d9c79ea3fa.png)
 
 ![Untitled (5)](https://user-images.githubusercontent.com/55529617/108087994-514b0b80-70bb-11eb-848e-95d159a90a29.png)
+
+## Reference
+
+[김기현의 딥러닝을 활용한 자연어처리 입문 올인원 패키지 Online. | 패스트캠퍼스](https://www.fastcampus.co.kr/data_online_dpnlp)
