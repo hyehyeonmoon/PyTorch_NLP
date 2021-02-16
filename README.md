@@ -11,4 +11,5 @@
 - Ch02 : Introduction of NLP
 - Ch03 : Preprocessing
 - Ch04 : Word Embedding
-- Ch05 : Text Classification
+- Ch05 : Text Classification(simple-ntc-masteer)  
+(You can clone this repo : https://github.com/kh-kim/simple-ntc)
