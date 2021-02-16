@@ -13,7 +13,8 @@
 | train| argparser, main 함수로 신경망의 학습을 시작|
 | trainer| PyTorch Ignite으로 구현되어 process function과 동작순서가 저장|
 | utils| parameter, gradienr의 L2 norm을 구하는 함수|
-실습에 사용된 데이터는 [개인노션](https://www.notion.so/Ch05_Text-classification-07754eb0b79c4db1b5977990c52ef22b)에서 찾을 수 있습니다.(비공개)
+
+실습에 사용된 데이터는 [비공개 노션](https://www.notion.so/Ch05_Text-classification-07754eb0b79c4db1b5977990c52ef22b)에서 찾을 수 있습니다.
 
 ## [새롭게 알게 된 내용들]
 
