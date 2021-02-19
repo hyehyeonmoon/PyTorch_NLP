@@ -11,7 +11,7 @@
 우리가 하고자 하는 것은 WSL→Ubuntu→Anaconda→Python→Jupyter notebook/Pycharm→library 설치이다.  
 각 단계에서 참고하면 좋은 글들을 링크로 걸어놓았다.
 
-1. Window에서 WSL 설치하기.(window linux버전)-->[링크](https://webdir.tistory.com/541)
+1. Window에서 WSL 설치하기.(window linux버전)-->[윈도우즈에서 리눅스 ](https://webdir.tistory.com/541)
 
 2. WSL의 Ubunta 설치하기-->[Windows 10에서 PyTorch, KoNLPy, Mecab 설치하기](https://medium.com/@juneoh/windows-10-64bit-%E1%84%8B%E1%85%A6%E1%84%89%E1%85%A5-pytorch-konlpy-mecab-%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8E%E1%85%B5%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5-4af8b049a178),
 [WSL에 아나콘다 설치](https://www.openaitrading.com/wsl%EC%97%90-%EC%95%84%EB%82%98%EC%BD%98%EB%8B%A4anaconda-%EC%84%A4%EC%B9%98/), [자연어처리 WSL 환경에서 시작하기](https://rosypark.tistory.com/122)
@@ -23,8 +23,8 @@
 
 - 실행
 
-디렉토리 설정-->[윈도우10에서 우분투 설치 및 윈도우 폴더 접근하기](https://ychae-leah.tistory.com/78)
+1. 디렉토리 설정-->[윈도우10에서 우분투 설치 및 윈도우 폴더 접근하기](https://ychae-leah.tistory.com/78)
 
-가상환경 설정
+2. 가상환경 설정
 
-Jupyter notebook 열기 or 데이터 전처리 하기
+3. Jupyter notebook 열기 or 데이터 전처리 하기
