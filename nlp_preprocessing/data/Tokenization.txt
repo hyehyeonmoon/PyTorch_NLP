@@ -1,0 +1,34 @@
+# Tokenization
+
+## 폴더경로설정
+cd /mnt/c/Users/moonf/Desktop/Pytorch/[패스트캠퍼스]-자연어생성-실습-/4-nlg/nlp_preprocessing
+## 가상환경설정
+conda activate nlp
+
+#파일 확인
+Ll
+ll ./data/
+
+#mecab을 이용해 분리+”_” 넣어주기
+$ cat ./data/corpus.shuf.test.ko | mecab -O wakati -b 99999 | python ./post_tokenize.py ./data/corpus.shuf.test.ko > ./data/corpus.shuf.test.tok.ko
+head -n 5 ./data/corpus.shuf.test.tok.ko
+
+#detokenizer로 원상복귀하기
+head -n 5 ./data/corpus.shuf.test.tok.ko | python detokenizer.py
+
+#mosestokenizer를 이용해 분리+”_”넣어주기
+pip install mosestokenizer
+cat ./data/corpus.shuf.test.en | python ./tokenizer.py | python ./post_tokenize.py ./data/corpus.shuf.test.en > ./data/corpus.shuf.test.tok.en
+
+#train, valid set도 tokenization 해주기
+cat ./data/corpus.shuf.train.ko | mecab -O wakati | python post_tokenize.py ./data/corpus.shuf.train.ko > ./data/corpus.shuf.train.tok.ko
+cat ./data/corpus.shuf.train.en | python tokenizer.py | python post_tokenize.py ./data/corpus.shuf.train.en > ./d
+ata/corpus.shuf.tok.train.en
+cat ./data/corpus.shuf.valid.ko | mecab -O wakati -b 99999 | python post_tokenize.py ./data/corpus.shuf.valid.ko > ./data/corpus.shuf.valid.tok.ko
+cat ./data/corpus.shuf.valid.en | python tokenizer.py | python post_tokenize.py ./data/corpus.shuf.valid.en > ./data/corpus.shuf.valid.tok.en
+
+#확인
+head -n 3 ./data/corpus.shuf.*.tok.ko
+wc -l ./data/corpus.shuf.*.tok.en
+wc -l ./data/corpus.shuf.*.tok.ko
+

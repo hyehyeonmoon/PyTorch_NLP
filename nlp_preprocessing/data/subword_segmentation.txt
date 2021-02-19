@@ -1,0 +1,42 @@
+# Subword segmentation
+
+## github에서 subword-nmt 가져오기
+cat ./README.md
+Git clone https://github.com/kh-kim/suboword-nmt
+
+## subword-nmt에 무엇이 있는지 파아가기
+cd subwod-nmt/
+ll
+cd ../
+
+## learn_bpe에 무슨 인수가 있는지 확인
+python ./subword-nmt/learn_bpe.py –asdf
+## 영어 train set에 learn_bpe 적용
+python ./subword-nmt/learn_bpe.py –input ./data/corpus.shuf.train.tok.en –output bpe.en.model –symbols 50000 --verbose
+### symbols : 몇 번의 merge operation이 일어나게 할 것인가
+
+#확인
+head bpe.en.model
+tail bpe.en.model
+#한국어 train set에 대해서 bpe 적용
+python ./subword-nmt/learn_bpe.py –input ./data/corpus.shuf.train.tok.ko –output bpe.en.model –symbols 30000 --verbose
+
+## 한국어에 대해서 apply_bpe 적용Assertion error가 남
+pip install bpe
+head -n 5 ./data/corpus.shuf.train.tok.ko | python subword-nmt/apply_bpe.py -c ./bpe.ko.model
+cat ./data/corpus.shuf.valid.tok.ko | python subword-nmt/apply_bpe.py -c ./bpe.ko.model > ./data/corpus.shuf.valid.tok.bpe.ko;
+
+## 분산처리
+jobs
+bg1
+bg2
+bg3
+
+## 영어에 대해서 subword segmentation
+cat ./data/corpus.shuf.train.tok.en | python subword-nmt/apply_bpe.py -c ./bpe.en.model >./data/corpus.shuf.train.tok.bpe.en
+cat ./data/corpus.shuf.valid.tok.en |  python subword-nmt/apply_bpe.py -c ./bpe.en.model >./data/corpus.shuf.valid.tok.bpe.en
+cat ./data/corpus.shuf.test.tok.en | python subword-nmt/apply_bpe.py -c ./bpe.en.model >./data/corpus.shuf.test.tok.bpe.en
+
+#확인
+head -n 3 ./data/corpus.shuf.*.tok.bpe.ko
+wc -l ./data/corpus.shuf.*.tok.bpe.en

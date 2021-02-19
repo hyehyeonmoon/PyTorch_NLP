@@ -1,0 +1,32 @@
+# Train, Valid, Test set으로 나누기
+## 폴더경로설정
+cd /mnt/c/users/moonf/Desktop/Pytorch
+cd data/
+## 가상환경 설정
+conda activate nlp # nlp : 가상환경 이름
+
+# 살펴보기
+head 2_대화체_190920.txt
+
+#합치기
+cat *.txt > corpus.tsv
+#살펴보기
+wc -l corpus.tsv
+head -n 5 corpus.tsv
+
+#shuffling 하기
+shuf corpus.tsv >corpus.shuf.tsv
+
+#train, valid, test set 분리하기
+head -n 40000 corpus.shuf.tsv > corpus.shuf.train.tsv; tail -n 5335 corpus.shuf.tsv | head -n 5335 > corpus.shuf.valid.tsv
+tail -n 1000 corpus.shuf.valid.tsv > corpus.shuf.test.tsv
+
+#한국어, 영어 분리하기
+cut -f1 corpus.shuf.train.tsv > corpus.shuf.train.ko ; cut -f2 corpus.shuf.train.tsv > corpus.shuf.train.en
+cut -f1 corpus.shuf.valid.tsv > corpus.shuf.valid.ko ; cut -f2 corpus.shuf.valid.tsv > corpus.shuf.valid.en
+cut -f1 corpus.shuf.test.tsv > corpus.shuf.test.ko ; cut -f2 corpus.shuf.test.tsv > corpus.shuf.test.en
+
+#잘 됬는지 확인해보기
+head -n 3 corpus.shuf.*.en
+head -n 3 corpus/shuf.*.ko
+
