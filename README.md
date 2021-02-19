@@ -5,7 +5,7 @@
 
 
 
-## [Index]
+## [NLP Introduction Index]
 
 - Ch01 : Orientation
 - Ch02 : Introduction of NLP
@@ -13,3 +13,17 @@
 - Ch04 : Word Embedding
 - Ch05 : Text Classification(simple-ntc-masteer)  
 (You can clone this repo : https://github.com/kh-kim/simple-ntc)
+
+## [NLP Intermediate Index]
+
+- Ch01 : Orientation
+- Ch02 : Language Modeling
+- Ch03 : Data Preparation
+- Ch04 : Sequence-to-Sequence
+- Ch05 : Inference for NLG
+- Ch06 : Evaluations
+- Ch07 : Beam Search
+- Ch08 : Transformer
+- Ch09 : Advanced Topics on NLG
+- Ch10 : Advanced Machine Translations
+- Ch11 : Summary
