@@ -13,7 +13,7 @@
 
 데이터는 저작권의 문제로 주어지지 않습니다.
 
-[AI-Hub]([https://www.aihub.or.kr/sample_data_board](https://www.aihub.or.kr/sample_data_board))에서 "한국어-영어 번역 말뭉치"를 다운 받습니다. 
+[AI-Hub](https://www.aihub.or.kr/sample_data_board](https://www.aihub.or.kr/sample_data_board)에서 "한국어-영어 번역 말뭉치"를 다운 받습니다. 
 
 Excel로 다운받아지며 (한국어, 영어) 또는 (한국어, NMT) column을 ctrl+c, ctrl+v를 통해 txt 파일로 옮깁니다. 한국어와 영어 사이에 tab이 생성되어 tsv 파일 형태가 완성됩니다.
 
