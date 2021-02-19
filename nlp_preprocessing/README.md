@@ -19,7 +19,7 @@ Excel로 다운받아지며 (한국어, 영어) 또는 (한국어, NMT) column�
 
 ### 실행환경
 
-window10에서 실습을 진행하기 위해서는 [여기]()를 참고해 주시기 바랍니다.
+window10에서 실습을 진행하기 위해서는 [여기](https://github.com/hyehyeonmoon/PyTorch_NLP/blob/main/env.md)를 참고해 주시기 바랍니다.
 
 ```
 ## 환경
